@@ -1,0 +1,6 @@
+Q2
+In trial 1, the test data used was [3.7, 4.9, 5.2, 3.3] and the it was classified to label 'virginica' as the test data values were similar to that of the feature values for virginica in the training data set.
+
+In trial 2,  the test data used was:[4.5, 3.8, 6.2, 5.2]. This too got classified to label ' virginica' as the test data values were similar to that of the feature values for virginica in the training data set.
+
+RESULT: Both trial 1 and trial 2 were classified to label virginica 

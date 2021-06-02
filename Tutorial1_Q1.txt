@@ -1,0 +1,23 @@
+#1.Training..........................
+
+#load data
+import pandas as pd
+iris= pd.read_csv("/content/irisexcel.csv")
+x=iris[['sepal_length','sepal_width','petal_length','petal_width']]
+y=iris['species']
+
+#algorithm (build model)
+from sklearn.svm import SVC
+Ml=SVC()
+
+#Fit data into algorithm
+Ml = Ml.fit (x,y)
+
+#2.Testing............................
+ # trial 1
+result= Ml.predict([[3.7, 4.9, 5.2, 3.3]])
+print (result) 
+
+ # trial 2... roll no :9-> test data :[4.5, 3.8, 6.2, 5.2]
+res= Ml.predict([[4.5, 3.8, 6.2, 5.2]])   
+print (res)

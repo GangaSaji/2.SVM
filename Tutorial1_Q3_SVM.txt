@@ -1,0 +1,18 @@
+#1.Training..........................
+
+#load data
+import pandas as pd
+heart= pd.read_csv("/content/heart.csv")
+x=heart[['trtbps','chol','thalachh','oldpeak']]
+y=heart['output']
+
+#algorithm (build model)
+from sklearn.svm import SVC
+Ml=SVC()
+
+#Fit data into algorithm
+Ml = Ml.fit (x,y)
+
+#2.Testing............................
+res= Ml.predict([[130, 240, 120, 3.7]])  
+print (res)
